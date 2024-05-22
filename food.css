@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+    --red: #ff3838;
+}
+
+* {
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+footer{
+    font-size: 16px;
+}
+.d-flex input{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: var(--red);
+}
+
+.btn {
+    display: inline-block;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+}
+.home .content{
+    margin-top: 30px;
+}
+
+
+.speciality .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.speciality .box-container .box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.speciality .box-container .box .image {
+    width: 80%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+margin-left: 30px;
+border-style: groove;
+border-color: #ff3838;
+}
+
+.speciality .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.speciality .box-container .box .content img {
+    margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.speciality .box-container .box .content p {
+    font-size: 1.6rem;
+    color: #000000;
+    padding: 1rem 0;
+}
+
+.speciality .box-container .box:hover .image {
+    top: 0;
+}
+
+.speciality .box-container .box:hover .content {
+    transform: translateY(100%);
+}
+
+
+
+
+

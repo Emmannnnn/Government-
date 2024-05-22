@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Government of Alaminos</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6f4qdG3BMe06fmMPp9lnx8QHyWmpnpTA3caJ7_rJFQ&s" style="width: 50px; height: 50px;"><a class="navbar-brand" href="#">Official Website of The City of Alaminos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Discover Alaminos City</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Welcome.html">Welcome Message</a>
+              <a class="dropdown-item" href="location.html">Getting Here</a>
+              <a class="dropdown-item" href="city_profile.html">City Profile</a>
+              <a class="dropdown-item" href="history.html">Local History</a>
+              <a class="dropdown-item" href="barangay.html">Our Barangay</a>
+              <a class="dropdown-item" href="religion.html">St. Joseph, Our Patron</a>
+              <a class="dropdown-item" href="festivals.html">Festivals</a>
+              <a class="dropdown-item" href="food.html">Foods and Delicacies</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Agri Alaminos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="prog.html">Programs & Projects</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="e-learn.html">E-Learning Links</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">I choose Hundred Island</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="hundred_island.html">Hundred Island National Park</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Public Service</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Mission.html">City's Mission & Vision</a>
+              <a class="dropdown-item" href="proj.html">City Programs and Projects</a>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="https://www.officialgazette.gov.ph">Check Philippine Laws</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <img src="https://alaminoscity.gov.ph/_assets/fbbannerMayorBryan800.png" alt="" class="home-img">
+
+  <div class="d-flex">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input class="form-control" type="search"  placeholder="Search for a Service" >
+    <input class="btn btn-secondary my-2 my-sm-0" type="button" value="Search">
+  </div>
+
+
+
+
+<div class="docu">
+  <div class="documentation">
+    <a href="city_profile.html"><h2>Ecological Profile</h2></a>
+    <p>City Government of Alaminos</p>
+    <div class="chapter" onclick="showPages('chapter1')">Chapter 1<br>History of Alaminos</div>
+    <div class="chapter" onclick="showPages('chapter2')">Chapter 2</div>
+    <div class="chapter" onclick="showPages('chapter3')">Chapter 3</div>
+    <div class="chapter" onclick="showPages('chapter4')">Chapter 4</div>
+    <div class="chapter" onclick="showPages('chapter5')">Chapter 5</div>
+    <div class="chapter" onclick="showPages('chapter6')">Chapter 6</div>
+    <p>Copyright © 2013</p>
+</div>
+
+<div id="content">
+    <img src="https://www.alaminoscity.gov.ph/ecological-profile/images/logo.jpg" style="width: 500px; height: 300px;">
+</div>
+
+</div>
+<script>
+    function showPages(chapter) {
+        var pages = document.getElementsByClassName('page');
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+        }
+        if (chapter === 'chapter1') {
+            var chapter1Pages = ['Early Settlers', 'Barrio to Pueblo', 'Casborran to Sarapsap', 'Municipality of Alaminos', 'Road to CityHood'];
+            for (var j = 0; j < chapter1Pages.length; j++) {
+                var page = document.createElement('div');
+                page.className = 'page';
+                page.textContent = chapter1Pages[j];
+                page.onclick = function() {
+                    showPageContent(this.textContent);
+                };
+                document.querySelector('.documentation').insertBefore(page, document.querySelectorAll('.chapter')[1]);
+            }
+        } else if (chapter === 'chapter2') {
+            var chapter2Pages = ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'Page 6', 'Page 7', 'Page 8', 'Page 9'];
+            for (var j = 0; j < chapter2Pages.length; j++) {
+                var page = document.createElement('div');
+                page.className = 'page';
+                page.textContent = chapter2Pages[j];
+                page.onclick = function() {
+                    showPageContent(this.textContent);
+                };
+                document.querySelector('.documentation').insertBefore(page, document.querySelectorAll('.chapter')[2]);
+            }
+        }
+        // Add more chapters and pages here
+    }
+
+    function showPageContent(page) {
+        var contentDiv = document.getElementById('content');
+        contentDiv.innerHTML = '<h2>' + page + '</h2>';
+
+        if (page === "Early Settlers") {
+        var paragraph1 = document.createElement('p');
+        paragraph1.textContent = "The City of Alaminos was first founded in 1734 by a group of Zambals led by a man known only as Suyang. This group left the mountains of their native province of Zambales amd journeyed north in search of a new home on lowlands near the seas. The settlement, located at a small plain at a slope of a hill facing the sea, was named Suyang and fishing became the settlers' main source of livelihood.";
+        paragraph1.classList.add('paragraph');
+        contentDiv.appendChild(paragraph1);
+        
+        var paragraph2 = document.createElement('p');
+        paragraph2.textContent = "Suyang was reestablished by Don Gaspar Montoya, Don Nicolas de San Jose, Don Domingo de Guzman, Don Nicolas Purificacion and others. In 1735, the people of Barrio Suyang built their church, convent and a tribunal house. They subscribed for the acquisition of the image of the Patriarch St. Joseph as patron of the barrio. At first, the settlers considered their new home a paradise. Aside from the bounty that the sea brought them, the place commands a panoramic view of Capurwapurwan and Cabaruyan Islands (now known as Hundred Islands and Anda, respectively).";
+        paragraph2.classList.add('paragraph');
+        contentDiv.appendChild(paragraph2);
+
+        var paragraph3 = document.createElement('p');
+        paragraph3.textContent = "The settlers soon lost their leader, Montoya,to sickness. Typhoons also frequented the area and they suffered a continuous pestilence on their livestock. All these unfortunate events were blamed on evil spirits and they decided to leave the place..";
+        paragraph3.classList.add('paragraph');
+        contentDiv.appendChild(paragraph3);
+        }
+
+
+
+
+        else if (page === "Barrio to Pueblo") {
+        var paragraph1 = document.createElement('p');
+        paragraph1.textContent = "They resettled in a land fronting the island of Alo and named it Casborran, (now Barangay Baleyadaan). They brought their belongings by boat and built permanent structures including the church, the convent and a casa tribunal.";
+        paragraph1.classList.add('paragraph');
+        contentDiv.appendChild(paragraph1);
+
+        var paragraph2 = document.createElement('p');
+        paragraph2.textContent = "Casborran rapidly grew into a progressive community and has established commercial relationship with Chinese merchants and neighboring towns. This thriving economy enticed other settlers from Eastern Pangasinan. The group from Dagupan, led by Don Andres Ballesteros and his son Diego, and those from Lingayen led by Don Francisco Aquino and Jose Garcia, helped in the building and expansion of Barrio Casborran. While a ship building industry emerged in Lingayen, boat building thrived in Casborran.";
+        paragraph2.classList.add('paragraph');
+        contentDiv.appendChild(paragraph2);
+        
+
+        var paragraph3 = document.createElement('p');
+        paragraph3.textContent = "In 1744, The settlers submitted a petition to the Spanish government for the barrio to be reclassified  into the full status of a town, independent of its mother town, now Bolinao. The request was granted three (3) years later, in 1747. Subsequently, town leaders sought for its own parish priest.";
+        paragraph3.classList.add('paragraph');
+        contentDiv.appendChild(paragraph3);
+
+        var paragraph4 = document.createElement('p');
+        paragraph4.textContent = "With Casborran's rapid growth and increase in population, a power sharing agreement between the founding clan of Suyang and the first migrants from Dagupan and Lingayen was formed. The two clans agreed to rule the town alternately, such that when the town chief was a Zambal, his deputy had to be a Pangasinense and vice versa and this form of government worked for the town and it enjoyed peace and harmony between the clans for a time.";
+        paragraph4.classList.add('paragraph');
+        contentDiv.appendChild(paragraph4);
+
+
+        var paragraph5 = document.createElement('p');
+        paragraph5.textContent = "However, this was broken in 1758 when a Zambal leader from the Suyang clan refused to step down to make way for Pangasinense's turn, in the person of Don Antonio Nicolas. Disappointed, he and his followers left Casborran and settled in areas now known as Barangays Pocal-pocal and Tanaytay. However, his followers abandoned him and trickled back to Casborran. Embittered, this led him to to seek help from Palaris, head of a rebel group in San Carlos City. Palaris and his men raided Casborran under cover of darkness, burning the church, the town hall and residences, and looting. The survivors fled in all directions, some lived temporarily on the banks of Bued River, others to Balsaan along the Embarcadero bridge. Many of these former inhabitants returned to the charred ruins of the town, w/c they called 'baleyadaan' or 'old town'.";
+        paragraph5.classList.add('paragraph');
+        contentDiv.appendChild(paragraph5);
+
+        }
+        else if (page === "Casborran to Sarapsap") {
+          var paragraph = document.createElement('p');
+        paragraph.textContent = "";
+        paragraph.classList.add('paragraph');
+        contentDiv.appendChild(paragraph);
+
+        var paragraph = document.createElement('p');
+        paragraph.textContent = "";
+        paragraph.classList.add('paragraph');
+        contentDiv.appendChild(paragraph);
+
+        var paragraph = document.createElement('p');
+        paragraph.textContent = "";
+        paragraph.classList.add('paragraph');
+        contentDiv.appendChild(paragraph);
+
+        var paragraph = document.createElement('p');
+        paragraph.textContent = "";
+        paragraph.classList.add('paragraph');
+        contentDiv.appendChild(paragraph);
+        }
+      }
+    
+</script>
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+<footer>
+
+
+
+
+  <div class="foot-container">
+  
+  <div class="foot-media">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6f4qdG3BMe06fmMPp9lnx8QHyWmpnpTA3caJ7_rJFQ&s">
+    <div class="media-text">
+      <p>Social Media:</p>
+      <a href=""><i class="fa-brands fa-youtube"></i><button type="button" class="btn btn-link" style="text-decoration: none; font-weight: bold; color: blue;">Youtube</button></a>
+      <a href=""><i class="fa-brands fa-twitter"></i><button type="button" class="btn btn-link" style="text-decoration: none; font-weight: bold; color: blue;">Twitter</button></a>
+      <a href=""><i class="fa-brands fa-facebook-f"></i><button type="button" class="btn btn-link" style="text-decoration: none; font-weight: bold; color: blue;">Facebook</button></a>
+    </div>
+  </div>
+  
+  <div class="foot-2col">
+  <h5 style="font-weight: bold; color: black; font-size: 16px;">Our City</h5>
+  <a href="Mission.html" style="text-decoration: none;"><p>Mission & Vision</p></a>
+  <a href="history.html" style="text-decoration: none;"><p>History</p></a>
+  <a href="proj.html" style="text-decoration: none;"><p>Health Education</p></a>
+  <a href="location.html" style="text-decoration: none;"><p>Location</p></a>
+  </div>
+  
+  
+  <div class="foot-3col">
+    <h5 style="font-weight: bold; color: black; font-size: 16px;">Our Government</h5>
+    <p >Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
+    <a href="" ><p>Gov.PH</p></a>
+    <a href="https://www.officialgazette.gov.ph"><p>Official Gazette</p></a>
+    </div>
+  
+  
+    <div class="foot-4col">
+      <h5 style="font-weight: bold; color: black; font-size: 16px;">Others</h5>
+      <a href="" ><p>Other Links</p></a>
+      <a href="" ><p>Accessibility</p></a>
+      <a href="" ><p>Privacy Policy</p></a>
+      </div>
+  
+  
+      <div class="foot-5col">
+        <h5 style="font-weight: bold; color: black; font-size: 16px;">Contact Us</h5>
+        <p>Email: cio_cityofalaminos@yahoo.com.ph</p>
+        <p>Landline: </p>
+        </div>
+  <div class="foot-end">
+        <h5>2024 © City Government of Alaminos City</h5>
+        <h5 class="h51">Design by Phillip B. Vinluan / Emmanuel Gabriel Soriana / Sebastian Garcia</h5>
+        </div>
+  </div>
+  </footer>
